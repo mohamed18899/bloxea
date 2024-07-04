@@ -1,0 +1,31 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "by OLKT2",Name = "blox fruit / IRQ HUB", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
+local Tab = Window:MakeTab({
+	Name = "البدايه/mine",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "اختر لغتك"
+})
+local Section = Tab:AddSection({
+	Name = "Choose your language"
+})
+OrionLib:MakeNotification({
+	Name = "تم التفعيل!",
+	Content = "Activated!",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+})
+Tab:AddButton({
+	Name = "العربيه",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/mohamed18899/bloxa/main/bloxa"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "English",
+	Callback = function()
+      		print("button pressed")loadstring(game:HttpGet("https://raw.githubusercontent.com/mohamed18899/bloxe/main/bloxe"))()
+  	end    
+})
